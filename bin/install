@@ -47,7 +47,7 @@ get_filename() {
 
 get_download_url() {
   local version="$1"
-  local platform="$(get_arch)"
+  local platform="$2"
   echo "https://github.com/sacloud/usacloud/releases/download/v${version}/usacloud_${platform}.zip"
 }
 
